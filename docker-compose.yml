@@ -11,5 +11,11 @@ services:
       - "./:/home/${USERNAME}/work"
     working_dir: /home/${USERNAME}/work/notebooks        
     command: jupyter notebook --ip 0.0.0.0
-    
+  mlflow_server:
+    build: ./mlflow
+    restart: always
+    container_name: mlflow_server
+    ports: 
+      - "5000:5000"
+    command: mlflow server --host 0.0.0.0
     
