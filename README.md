@@ -11,7 +11,7 @@ Based on the python:3.10-slim-bullseye image, to make it more lightweight. Conta
 
 There are some simple demo notebooks included: 
 * `iris_dataset.ipynb` with some basic dataset exploration and visualization
-* `pandas-demo.ipynb` with a basic pandas Dataframe creation and aggregation
+* `pandas_demo.ipynb` with a basic pandas Dataframe creation and aggregation
 
 #### Linux console
 
