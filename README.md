@@ -9,7 +9,9 @@ Based on the python:3.10-slim-bullseye image, to make it more lightweight. Conta
 * Run the command `docker-compose up` (`docker compose up` on Windows) 
 * Click one of the URLs printed to the terminal. This will open a Jupyter notebook session in your browser.
 
-There is a simple demo notebook `iris_dataset.ipynb` with some basic dataset exploration and visualization.
+There are some simple demo notebooks included: 
+* `iris_dataset.ipynb` with some basic dataset exploration and visualization
+* `pandas-demo.ipynb` with a basic pandas Dataframe creation and aggregation
 
 #### Linux console
 
