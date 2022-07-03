@@ -2,7 +2,7 @@
 
 Based on the python:3.10-slim-bullseye image, to make it more lightweight. Contains only a few Python libraries, and sets up the Jupyter notebook for experimenting.
 
-### USE:
+### Usage:
 
 #### Jupyter Notebook (default):
 
@@ -18,6 +18,8 @@ There is a simple demo notebook `iris_dataset.ipynb` with some basic dataset exp
 
 This will open the bash console in the working directory. From here you can e.g. run `ipython` (interactive Python console). Please note that matplotlib output will not be visualized, as the container's Linux doesn't have a browser.
 
+
+### Explanation:
 
 What happens when you run the `docker-compose up' command?
 
