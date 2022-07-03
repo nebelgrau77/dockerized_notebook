@@ -1,0 +1,15 @@
+version: "3"
+services:
+  jupyter_ds:
+    build: .
+    #restart: unless-stopped
+    container_name: python_ds  
+    ports:
+      - "8888:8888"
+    user: ${USERNAME}
+    volumes:
+      - "./:/home/${USERNAME}/work"
+    working_dir: /home/${USERNAME}/work/notebooks        
+    command: jupyter notebook --ip 0.0.0.0
+    
+    
