@@ -44,7 +44,7 @@ What happens when you run the `docker-compose up' command?
 * maps this directory to /home/username/work
 * sets /home/username/work/notebooks as the working directory: this is where Jupyter notebook files will be saved
 
-### NOTES
+### Notes:
 
 * The first time `docker-compose up` is run, it will need to download the image and then build it, including the installation of the Python modules. This may take up to a few minutes depending on the system and internet connection.
 * At the moment the desired user name must be changed in two separate places: 
@@ -52,7 +52,7 @@ What happens when you run the `docker-compose up' command?
   * directly in the Dockerfile, in the `ARG USERNAME=` line
 * Tested on Windows 10 and Ubuntu Linux 20.04.
 
-### TO DO:
+### To do:
 
 * Find a way to define the desired non-root user name in a single place.
 * Make sure that there aren't any unnecessary entries in `Dockerfile` or `docker-compose.yml`
