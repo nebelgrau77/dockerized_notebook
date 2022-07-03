@@ -1,9 +1,9 @@
 version: "3"
 services:
   jupyter_ds:
-    build: .
+    build: ./jupyter
     #restart: unless-stopped
-    container_name: python_ds  
+    container_name: jupyter_ds  
     ports:
       - "8888:8888"
     user: ${USERNAME}
