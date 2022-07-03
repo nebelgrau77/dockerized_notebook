@@ -29,20 +29,20 @@ What happens when you run the `docker-compose up' command?
 * creates a non-root user nebelgrau (please modify `ARG USERNAME` if you wish to use a different name)
 * upgrades Python's PIP installer to the latest version
 * installs Python libraries specified in `requirements.txt`: 
-  * pandas, 
-  * numpy (dependency of pandas), 
-  * matplotlib (also dependency of pandas), 
-  * scikit-learn, 
-  * ipython 
-  * jupyter notebook
-* exposes port 8888 used by Jupyter
+  * `pandas`, 
+  * `numpy` (dependency of pandas), 
+  * `matplotlib`
+  * `scikit-learn`, 
+  * `ipython` 
+  * `jupyter notebook`
+* exposes port `8888` used by Jupyter
 * sets user as the non-root user defined above
 
 #### docker-compose.yml
 
-* maps the 8888 port to the host's 8888 port, so that Jupyter notebooks can be opened in host's browser
-* maps this directory to /home/username/work
-* sets /home/username/work/notebooks as the working directory: this is where Jupyter notebook files will be saved
+* maps the `8888` port to the host's `8888` port, so that Jupyter notebooks can be opened in host's browser
+* maps this directory to `/home/username/work`
+* sets `/home/username/work/notebooks` as the working directory: this is where Jupyter notebook files will be saved
 
 ### Notes:
 
