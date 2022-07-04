@@ -2,7 +2,7 @@ version: "3"
 services:
   jupyter_ds:
     build: ./jupyter
-    #restart: unless-stopped
+    restart: unless-stopped
     container_name: jupyter_ds  
     ports:
       - "8888:8888"
@@ -10,12 +10,28 @@ services:
     volumes:
       - "./:/home/${USERNAME}/work"
     working_dir: /home/${USERNAME}/work/notebooks        
+    
+    networks:
+      - frontend
+      - backend
     command: jupyter notebook --ip 0.0.0.0
+  
   mlflow_server:
     build: ./mlflow
-    restart: always
+    restart: unless-stopped
     container_name: mlflow_server
     ports: 
       - "5000:5000"
+    networks:
+      - frontend
+      - backend
+    volumes: 
+      - "./notebooks/mlruns/:/mlruns"
     command: mlflow server --host 0.0.0.0
-    
+    #command: mlflow server --backend-store-uri /mlflow --host 0.0.0.0
+
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge

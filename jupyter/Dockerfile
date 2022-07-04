@@ -21,6 +21,9 @@ RUN groupadd --gid $USER_GID $USERNAME \
     # && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     # && chmod 0440 /etc/sudoers.d/$USERNAME
 
+RUN apt update && apt upgrade -y
+RUN apt-get -y install git
+
 # upgrade pip to the latest version 
 RUN pip install --upgrade pip
 # install Python packages defined in requirements.txt

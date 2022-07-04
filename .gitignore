@@ -1,1 +1,4 @@
 /notebooks/.ipynb_checkpoints/*
+/notebooks/mlruns/*
+/notebooks/Untitled*
+NOTES.md
