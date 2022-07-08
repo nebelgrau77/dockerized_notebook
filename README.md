@@ -44,7 +44,7 @@ What happens when you run the `docker-compose up' command?
 
 * maps the `8888` port to the host's `8888` port, so that Jupyter notebooks can be opened in host's browser
 * maps this directory to `/home/username/work`
-* sets `/home/username/work/notebooks` as the working directory: this is where Jupyter notebook files will be saved
+* sets `/home/username/work/data` as the working directory: this is where folders for Jupyter notebooks and for mlflow logging will be
 
 ### Notes:
 
