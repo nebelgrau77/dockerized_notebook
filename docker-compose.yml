@@ -9,7 +9,7 @@ services:
     user: ${USERNAME}
     volumes:
       - "./:/home/${USERNAME}/work"
-    working_dir: /home/${USERNAME}/work/notebooks        
+    working_dir: /home/${USERNAME}/work/data
     
     networks:
       - frontend
@@ -26,9 +26,9 @@ services:
       - frontend
       - backend
     volumes: 
-      - "./notebooks/mlruns/:/mlruns"
+      - "./data/mlruns/:/mlruns"
     command: mlflow server --host 0.0.0.0
-    #command: mlflow server --backend-store-uri /mlflow --host 0.0.0.0
+    
 
 networks:
   frontend:
