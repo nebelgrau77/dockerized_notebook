@@ -1,6 +1,6 @@
 # Basic Jupyter Notebook with scikit-learn and MLflow
 
-This setup allows to run the examples from chapter 1 of the book ["Machine Learning Engineering with MLflow"](https://www.packtpub.com/product/machine-learning-engineering-with-mlflow/9781800560796). I put it together from scratch, as I had problems getting the original book example to work (there is a problem with permissions of a file used by Jupyter, which has to be addressed with an usafe workaround, by adding `ENV JUPYTER_ALLOW_INSECURE_WRITES=true` at the end of the Dockerfile). It is also pretty bloated, as it uses the very complete `jupyter/scipy-notebook` image with lots of modules that are not necessary for this example.
+This setup allows to run the examples from chapter 1 of the book ["Machine Learning Engineering with MLflow"](https://www.packtpub.com/product/machine-learning-engineering-with-mlflow/9781800560796). I put it together from scratch, as I had problems getting the original book example to work (there is a problem with permissions of a file used by Jupyter, which has to be addressed with an usafe workaround, by adding `ENV JUPYTER_ALLOW_INSECURE_WRITES=true` at the end of the Dockerfile). The example uses the `jupyter/scipy-notebook` image, which is pretty bloated as it comes with lots of modules, that are not necessary for this example.
 
 ## Description
 
