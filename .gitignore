@@ -1,0 +1,7 @@
+work/.ipynb*
+work Untitled*.ipynb
+.local
+.ipython
+.jupyter
+work/mlruns/*
+work/mlruns
