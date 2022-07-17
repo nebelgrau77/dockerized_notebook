@@ -24,7 +24,9 @@ There is a simple notebook included, with the very first example from Chapter 1 
 
 ## Notes
 
-This is by no means intended as "Docker/Jupyter/Python best practices", I'm learning it all myself :) But it might help understanding how those containers are set up, as it's easier to analyze than the `scipy-notebook`, itself built on top of `minimal-notebook`, which in turn is based on `base-notebook`, etc. 
+This is by no means intended as "Docker/Jupyter/Python best practices", I'm a newbie myself. But it might help understanding how those containers are set up, as it's easier to analyze than the `scipy-notebook`, itself built on top of `minimal-notebook`, which in turn is based on `base-notebook`, etc. 
+
+This website: [PythonSpeed](https://pythonspeed.com) has many clear and thorough articles on Docker and Python, definitely worth reading.
 
 
 ### __Comments and contributions are most welcome!__
