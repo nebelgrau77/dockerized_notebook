@@ -4,8 +4,8 @@ FROM python:3.10-slim-bullseye
 # copy requirements.txt into the container to be used inside the container
 COPY requirements.txt /tmp/requirements.txt
 
-# set environment variables
-ARG USERNAME=nebelgrau
+# set environment variables - set your username here
+ARG USERNAME=my_user
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
