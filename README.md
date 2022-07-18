@@ -1,6 +1,6 @@
-## Simple Docker image for data science / machine learning experiments
+## Simple Docker image for data science / machine learning experiments with scikit-learn and MLflow
 
-Based on the python:3.10-slim-bullseye image, to make it more lightweight. Contains only a few Python libraries, and sets up the Jupyter notebook for experimenting.
+Based on the python:3.10-slim-bullseye image, to make it more lightweight. Contains only a few Python libraries, and sets up the Jupyter notebook for experimenting, and MLflow server for tracking (only local filesystem storage for now).
 
 ### Usage:
 
@@ -8,8 +8,10 @@ Based on the python:3.10-slim-bullseye image, to make it more lightweight. Conta
 
 * Run the command `docker-compose up` (`docker compose up` on Windows) 
 * Click one of the URLs printed to the terminal. This will open a Jupyter notebook session in your browser.
+* Open http://localhost:5000 to access MLflow user interface.
 
 There are some simple demo notebooks included: 
+* `mlflow_test.ipynb` for a simple scikit-learn experiment, tracked with MLflow
 * `iris_dataset.ipynb` with some basic dataset exploration and visualization
 * `pandas_demo.ipynb` with a basic pandas Dataframe creation and aggregation
 
